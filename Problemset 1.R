@@ -10,11 +10,14 @@ x <- c(1280, 5320, 4390, 2100, 1240, 3060, 4770, 1050, 360, 3330, 3380, 340, 100
 hist(x)
 
 #Section 1.3 #34ab
-U <- c(6, 5, 1, 33, 4, 5, 80, 18, 35, 17, 23)
+
+
+
+U <- c(6.0, 5.0, 11.0, 33.0, 4.0, 5.0, 80.0, 18.0, 35.0, 17.0, 23.0)
 F <- c(4, 14, 11, 9, 9, 8, 4, 20, 5, 8.9, 21, 9.2, 3, 2, 0.3)
 
 mean(U)
-[1] 20.63636
+[1] 21.54545
 mean(F)
 [1] 8.56
 median(U)
@@ -24,12 +27,12 @@ median(F)
 
 
 #Section 1.3 #38
-BP <- c(118.6, 127.4, 138.4, 130, 113.7, 122, 108.3, 131.5, 133.2)
+BP <- c(120, 125, 140, 130, 115, 120, 110, 130, 135)
 median(BP)
-[1] 127.4
-BP <- c(118.6, 127.6, 138.4, 130, 113.7, 122, 108.3, 131.5, 133.2)
+[1] 125
+BP <- c(120, 130, 140, 130, 115, 120, 110, 130, 135)
 median(BP)
-[1] 127.6
+[1] 130
 
 
 #Section 1.4 #45
@@ -61,17 +64,7 @@ boxplot(df, horizontal = TRUE)
 #NT #1 (NT = Not in Textbook)
 
 bedroom <- c(350, 442, 466, 475, 498, 499, 529, 539, 545, 549, 580, 595, 600, 619, 625, 639, 750, 1150, 1160, 1170, 1185, 1190, 1200, 1210, 1220, 1230, 1260, 1265, 1265, 1280, 1280, 1290, 1295, 1295, 1305, 1310, 1310, 1325, 1325, 1340, 1340, 1355, 1375)
-stem(bedroom)
 
-
-#The decimal point is 2 digit(s) to the right of the |
-  
-2 | 5
-4 | 4780034558
-6 | 002345
-8 | 
-10 | 56799
-12 | 012367788900111334468
 
 #b = morningside heights 1-bedroom apt prices (in $1000s)
 
@@ -81,7 +74,7 @@ barplot(cumsum(bedroom$counts),
         col = "lightblue", 
         space = 0,  # remove gaps between bars
         las = 1, # make all tick mark labels horizontal
-        ylim = c(0, 150), # make the y-axis longer
+        ylim = c(0, 60), # make the y-axis longer
         names.arg = bedroom$mids
 )
 
